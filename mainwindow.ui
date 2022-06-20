@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>864</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>533</y>
+      <width>593</width>
+      <height>286</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>connect</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>---&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btnMoveForward">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Forward</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btnMoveBack">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnMoveRight">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Right</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="btnMoveLeft">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Left</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btnStop">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="labVideoLeft">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>8</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>480</width>
+      <height>480</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>480</width>
+      <height>480</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="labVideoRight">
+    <property name="geometry">
+     <rect>
+      <x>508</x>
+      <y>8</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>480</width>
+      <height>480</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>480</width>
+      <height>480</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditIpAddr">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>500</y>
+      <width>165</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPort">
+    <property name="geometry">
+     <rect>
+      <x>188</x>
+      <y>500</y>
+      <width>165</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSaveServerAddr">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>500</y>
+      <width>129</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Server Addres</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnShowSpeedSensorsGraf">
+    <property name="geometry">
+     <rect>
+      <x>832</x>
+      <y>756</y>
+      <width>133</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Window </string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>688</x>
+      <y>528</y>
+      <width>401</width>
+      <height>213</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="lblRpmFL">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>RPM FRONT LEFT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdRpmFrontLeft"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="lblRpmFR">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>RPM FRONT RIGHT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdRpmFrontRight"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="lblRpmBL">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>RPM BACK LEFT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdRpmBackLeft"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="lblRpmBR">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>RPM BACK RIGHT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdRpmBackRight"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1122</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
